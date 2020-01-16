@@ -3,6 +3,9 @@ tunnels:
   ssh:
     proto: tcp
     addr: 22
-dashboard:
+  dashboard:
     proto: http
     addr: 8080
+  vnc:
+    proto: tcp
+    addr: 5900
