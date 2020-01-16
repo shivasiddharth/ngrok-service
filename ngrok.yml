@@ -1,3 +1,4 @@
+authtoken: abc123
 tunnels:
   ssh:
     proto: tcp
