@@ -3,3 +3,6 @@ tunnels:
   ssh:
     proto: tcp
     addr: 22
+dashboard:
+    proto: http
+    addr: 8080
