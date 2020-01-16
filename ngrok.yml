@@ -1,0 +1,7 @@
+tunnels:
+  ssh:
+    proto: tcp
+    addr: 22
+  ssh:
+    proto: tcp
+    addr: 8001

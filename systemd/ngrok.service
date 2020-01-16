@@ -1,0 +1,15 @@
+[Unit]
+Description=Companion Service
+After=network.target
+
+[Service]
+Environment=PATH=/home/__USER__/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+ExecStart=/home/__USER__/ngrok start -config /home/__USER__/ngrok-service/ngrok.yml
+WorkingDirectory=/home/__USER__/
+StandardOutput=tty,
+StandardError=tty
+Restart=always
+User=__USER__
+
+[Install]
+WantedBy=multi-user.target
